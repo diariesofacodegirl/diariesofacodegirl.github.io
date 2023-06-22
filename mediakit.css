@@ -1,5 +1,5 @@
 html, body {
-    max-width: 120%;
+    max-width: 100%;
     overflow: hidden;
 }
 
@@ -652,6 +652,15 @@ html, body {
       .brands h2{
         font-size: 30px;
     }
+      
+     .icons a{
+         width: 5%;  
+         padding: 9px; 
+         align-self: center;
+         margin: 20px;
+         display: flex;
+         text-align: center;
+      }
   }
 
   @media (max-width: 510px){
