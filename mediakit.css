@@ -633,10 +633,6 @@ html, body {
      .icons{
        display: flex;
      }
-
-     .priceList2{
-        margin-left: 2rem;
-     }
   }
 
   @media (max-width: 580px){
