@@ -586,9 +586,9 @@ html, body {
         grid-template-columns: repeat(2, 1fr);
       }
 
-     .icons{
-        width: 10%;
-        height: 10%
+     .icons .a img{
+        width: 20px;
+        height: 20px;
     }
 
      .serviceList{
