@@ -587,7 +587,8 @@ html, body {
       }
 
      .icons{
-       display: none;
+        width: 10%;
+        height: 10%
     }
 
      .serviceList{
