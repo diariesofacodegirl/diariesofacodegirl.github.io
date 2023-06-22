@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="background">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Media Kit @diariesofacodegirl</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="index.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link rel="stylesheet" href="mediakit.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header">
+            <ul class="navlist">
+                <li>
+                    <a href="#home">HOME</a>
+                </li>
+                <li>
+                    <a href="#statistics">STATISTICS</a>
+                </li>
+                <li>
+                    <a href="#work">WORK EXAMPLES</a>
+                </li>
+                <li>
+                    <a href="#prices">SERVICES</a>
+                </li>
+                <li>
+                    <a href="https://forms.gle/hAzbNUQDJpWSpxH58" target="_blank">CONTACT</a>
+                </li>
+            </ul>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <script>
+                let menu = document.querySelector('#menu-icon');
+                let navList = document.querySelector('.navlist');
+
+                menu.onclick = () => {
+                    menu.classList.toggle('bx-x');
+                    navList.classList.toggle('open');
+                };
+
+                let listItems = navList.getElementsByTagName('a');
+                for (let i = 0; i < listItems.length; i++) {
+                    listItems[i].addEventListener('click', () => {
+                        menu.classList.remove('bx-x');
+                        navList.classList.remove('open');
+                    });
+                }
+            </script>
+        </div>
+        <section class="home" id="home">
+            <div class="main">
+                <div class="main-text">
+                    <h4>Hello! I'm ANASTASIA</h4>
+                    <h1>Tech Content Creator and Influencer</h1>
+                    <p>I Create Content to Help Your Brand:
+                        <br>Connect, Build Relationships, Drive Engagement and Sales!</p>
+                    <a href="https://forms.gle/hAzbNUQDJpWSpxH58" target="_blank">Let's create something amazing!</a>
+                </div>
+                <div class="main-img">
+                    <img src="img.svg" alt="IMAGE">
+                </div>
+            </div>
+
+            <svg class="arrows">
+                <path class="a1" d="M0 10 L30 32 L60 10"></path>
+                <path class="a2" d="M0 30 L30 52 L60 30"></path>
+                <path class="a3" d="M0 50 L30 72 L60 50"></path>
+            </svg>
+
+            <script>
+                const sc = ScrollReveal({distance: '65px', duration: 2600, delay: 450, reset: false});
+                sc.reveal('.main-text', {
+                    delay: 100,
+                    origin: 'top'
+                });
+                sc.reveal('.main-img', {
+                    delay: 350,
+                    origin: 'top'
+                });
+            </script>
+        </section>
+
+        <section id="statistics" class="stats">
+            <div class="socialStats">
+                <div class="insta">
+                    <img src="instagram.svg" alt="Instagram Link"/>
+                    <h4>40K+ Followers</h4>
+                    <h4>1.3M+ Accounts Reached
+                        <br><span style="color: black; font-size:10px;">
+                            (last 90 days)</span>
+                    </h4>
+                </div>
+                <div class="tt">
+                    <img src="tiktok.svg" alt="TikTok Link"/>
+                    <h4>4.5K+ Followers</h4>
+                    <h4>39K+ Video Views
+                        <br><span style="color: black; font-size:10px;">
+                            (last 60 days)</span>
+                    </h4>
+                </div>
+                <script>
+                    sc.reveal('.insta', {
+                        delay: 100,
+                        origin: 'left'
+                    });
+                    sc.reveal('.tt', {
+                        delay: 350,
+                        origin: 'right'
+                    });
+                </script>
+            </div>
+        </section>
+
+        <section id="work" class="brands">
+            <h2>Some Brands I worked with:</h2>
+            <div class="video-container">
+                <video class="video" src="delamu.mp4" controls></video>
+                <video class="video" src="watch.mp4" controls></video>
+                <video class="video" src="desk.mp4" controls></video>
+                <video class="video" src="zerotomastery.mp4" controls></video>
+                <video class="video" src="obsbot.mp4" controls></video>
+            </div>
+            <script>
+                sc.reveal('.brands', {
+                    delay: 100,
+                    origin: 'left'
+                });
+            </script>
+        </section>
+
+        <section id="prices" class="priceList">
+            <div class="box">
+                <div class="container">
+                    <main class="grid">
+                        <article>
+                            <div class="text">
+                                <h3>Collaborations</h3>
+
+                                <p>Want to showcase your product or service? I will create a social media 
+                                                                promotion for your brand. I can promote your service, do a product review or an unboxing video 
+                                                                to post on my Social Media channels.
+                                    <br>
+                                    <br>
+                                    See the full list of available services
+                                    <a href="prices.html" target="_blank">
+                                        <strong>HERE</strong>
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+
+                            <div class="text">
+                                <h3>UGC</h3>
+                                <p>I will create User Generated Content for your brand. 
+                                                                  I can create organic content, how-to videos, product reviews or anything else you need.  
+                                                                  The content is yours to do anything you need with it.
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="text">
+                                <h3>Consultation</h3>
+                                <p>New to Social Media and don't know where to start? I can help you build your brand and improve your 
+                                                                Social Media presence. I will teach you how to utilize different Social Media channels, create content, select and 
+                                                                approach the right influencers for collaborations and campaigns and just give you the overview how Social Media marketing works!</p>
+                            </div>
+                        </article>
+                    </main>
+                </div>
+            </div>
+            <div class="serviceList">
+                <h4>Want to discuss further?</h4><br>
+                <a href="https://forms.gle/hAzbNUQDJpWSpxH58" target="_blank">Let's Talk!</a>
+            </div>
+            <div class="icons">
+                <a href="https://www.instagram.com/diariesofacodegirl" target="_blank"><img src="instagram.svg" alt="Instagram Link"/></a>
+                <a href="https://www.tiktok.com/@diariesofacodegirl" target="_blank"><img src="tiktok.svg" alt="TikTok Link"/></a>
+                <a href="mailto: diariesofacodegirl.pr@gmail.com"><img src="email.svg" alt="Email Link"/></a>
+            </div>
+            <script>
+                sc.reveal('.box', {
+                    delay: 100,
+                    origin: 'top'
+                });
+                sc.reveal('.serviceList', {
+                    delay: 100,
+                    origin: 'bottom'
+                });
+                sc.reveal('.icons', {
+                    delay: 100,
+                    origin: 'bottom'
+                });
+            </script>
+        </section>
+    </body>
+
+</html>
