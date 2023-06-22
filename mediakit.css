@@ -477,7 +477,7 @@ html, body {
  }
  
  .icons a{
-     width: 35%;  
+     width: 5%;  
      padding: 9px; 
      align-self: center;
      margin: 20px;
@@ -655,15 +655,6 @@ html, body {
       .brands h2{
         font-size: 30px;
     }
-      
-     .icons a{
-         width: 5%;  
-         padding: 9px; 
-         align-self: center;
-         margin: 20px;
-         display: flex;
-         text-align: center;
-      }
   }
 
   @media (max-width: 510px){
