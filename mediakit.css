@@ -355,7 +355,7 @@ html, body {
     gap: 20px;
   }
 
-  .tb{
+.tb{
     border-collapse: collapse; 
     width: 100%;
   }
@@ -633,6 +633,10 @@ html, body {
      .icons{
        display: flex;
      }
+
+     .priceList2{
+       margin-left: 10px;
+}
   }
 
   @media (max-width: 580px){
