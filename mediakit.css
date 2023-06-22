@@ -2,6 +2,7 @@ html, body {
    margin: 0;
    padding: 0;
    height: 100%;
+   max-width: fit-content;
 }
 
 .background{
@@ -466,27 +467,62 @@ html, body {
      color: rgb(212, 91, 162);
      font-weight: 600;
  }
-   
+
  .icons{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-right: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    margin: 1rem;
+    margin-top: 3rem;
  }
- 
+
  .icons a{
-     width: 40%;  
-     padding: 9px; 
-     align-self: center;
-     margin: 20px;
-     display: flex;
-     text-align: center;
+    margin: 1rem;
+ }
+   
+ .fab{
+    padding: 15px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
   }
- 
-  .icons a:hover{
-     transform: scale(1.2);
+
+  .fas{
+    padding: 15px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fab:hover{
+      opacity: 0.7;
+  }
+
+  .fas:hover{
+    opacity: 0.7;
+}
+
+.fa-youtube{
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram{
+    background: #125688;
+    color: white;
+  }
+
+  .fa-tiktok{
+    background: #000000;
+    color: white;
+  }
+  
+  .fa-envelope-square{
+    background: #229e4c;
+    color: white;
   }
 
 /* END PRICE LIST SECTION */
@@ -512,6 +548,10 @@ html, body {
     .video-container{
         grid-template-columns: repeat(3, 1fr);
       }
+
+      .icons a{
+        margin: 10px;
+     }
   }
 
   @media (max-width: 850px){
@@ -586,13 +626,12 @@ html, body {
         grid-template-columns: repeat(2, 1fr);
       }
 
-     .icons .a img{
-        width: 20px;
-        height: 20px;
-    }
-
      .serviceList{
         margin-bottom: 2rem;
+     }
+
+     .icons{
+       display: flex;
      }
   }
 
