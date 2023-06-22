@@ -588,7 +588,11 @@ html, body {
 
      .icons{
        display: none;
- }
+    }
+
+     .serviceList{
+        margin-bottom: 2rem;
+     }
   }
 
   @media (max-width: 580px){
